@@ -1,0 +1,44 @@
+{
+  "name": "to-do-widget",
+  "productName": "to-do-widget",
+  "version": "1.0.0",
+  "description": "a to do list widget w a pomodoro timer",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": {
+    "name": "elsie",
+    "email": "65228364+elsieeeyjd@users.noreply.github.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^7.8.3",
+    "@electron-forge/maker-deb": "^7.8.3",
+    "@electron-forge/maker-rpm": "^7.8.3",
+    "@electron-forge/maker-squirrel": "^7.8.3",
+    "@electron-forge/maker-zip": "^7.8.3",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.8.3",
+    "@electron-forge/plugin-fuses": "^7.8.3",
+    "@electron/fuses": "^1.8.0",
+    "electron": "38.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.elsie.todoapp",
+    "productName": "to-do widget",
+    "icon": "src/assets/cat/cat-idle.PNG",
+    "directories": {
+      "output": "dist"
+    }
+  }
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>to-do widget <3</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <section class="to-do">
+      <div class="flex">
+        <div class="date-box">
+          <span id="dayName"></span>
+          <span id="dayNumber"></span>
+          <span id="monthName"></span>
+        </div>
+        <div class="progress-container">
+          <h2>Progress:</h2>
+          <div class="progress" id="progress">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span id="progress-label">0/0 tasks done</span>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <input id="task-input" placeholder="input your task!"></input>
+        <button id="add-task"><img src="assets/add-task.png" alt="add-task" onmousedown="this.src='assets/add-task-c.png'" onmouseup="this.src='assets/add-task.png'"></button>
+      </div>
+      <div class="task-header">
+        <h3>My tasks:</h2>
+        <button id="clear"><img src="assets/clear.png" alt="clear all" onmousedown="this.src = 'assets/clear-c.png'" onmouseup="this.src = 'assets/clear.png'"></button>
+      </div>
+      <div id="tasks" class="tasks"></div>
+    </section>
+    <section class="pomodoro">
+      <div class="time-container">
+        <span id="mode-display">no session started yet!</span>
+        <span id="timer-display">00:00</span> 
+      </div>
+      <div class="cat-container" id="cat-container">
+        <img id="cat" src="assets/cat/cat-idle.PNG" alt="cat">
+      </div>
+      <div class="menu">
+        <span>choose duration: <select name="select time" id="time-input">
+          <option value="" disabled selected>select time</option>
+          <option value="15">15 minutes</option>
+          <option value="20">20 minutes</option>
+          <option value="25">25 minutes</option>
+          <option value="30">30 minutes</option>
+          <option value="35">35 minutes</option>
+          <option value="40">40 minutes</option>
+          <option value="45">45 minutes</option>
+        </select></span>
+        <div class="btn-container">
+          <button id="start-pause-btn">start/pause</button>
+          <button id="reset-btn"><img src="assets/reset.png" alt="reset" onmousedown="this.src = 'assets/reset-c.png'" onmouseup="this.src = 'assets/reset.png'"></button>
+        </div>
+      </div>
+      
+    </section>
+    
+    <script src="todo.js"></script>
+    <script src="pomodoro.js"></script>
+  </body>
+</html>
