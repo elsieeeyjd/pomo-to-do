@@ -1,6 +1,7 @@
 # Pomo-Todo Widget 💗
 
-![downloads](https://img.shields.io/github/downloads/elsieeeyjd/pomo-to-do/total)
+![downloads (all assets, all releases)](https://img.shields.io/github/downloads/elsieeeyjd/pomo-to-do/total)
+
 Download <a href="https://github.com/elsieeeyjd/pomo-to-do/releases/tag/v1.0.0" target="_blank">HERE</a>
 
 <img src="https://files.catbox.moe/8wj1c5.png" alt="sample screenshot">
